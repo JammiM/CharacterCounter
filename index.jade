@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Character counter
+    meta(charset="UTF-8")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css")
+  body
+  
+    section(id="calculatorSection")
+      .container
+        .row
+          .col-md-12.col-md-4.col-lg-4 
+            h1 Simple Character Counter
+            small(class="lead") Enter some text and it will calulate the amount of characters.
+          .col-sm-12.col-md-4.col-lg-4
+            textarea(name="textfield",id="textfield",cols="30",rows="10")
+          .col-sm-12.col-md-4.col-lg-4
+            h1 Result
+            button(id="calBtn",class="btn btn-danger") Calulate
+            small(class="lead") There is characters.
+            p#result
